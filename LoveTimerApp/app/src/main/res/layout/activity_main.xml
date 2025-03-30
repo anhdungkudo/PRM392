@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background_image"> <!-- Thêm hình nền cho màn hình -->
+
+    <!-- Hình ảnh trái tim -->
+    <ImageView
+        android:id="@+id/loveIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/love_icon" <!-- Thêm icon trái tim -->
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="20dp"
+    android:layout_alignParentTop="true"/>
+
+    <!-- TextView hiển thị thời gian yêu đương -->
+    <TextView
+        android:id="@+id/loveTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Together: 0 years, 0 months, 0 days"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/loveIcon"/>
+
+    <!-- EditText để người dùng nhập tên mối quan hệ -->
+    <EditText
+        android:id="@+id/relationshipName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Relationship Name"
+        android:textSize="18sp"
+        android:layout_below="@id/loveTimeText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"/>
+
+    <!-- Nút để người dùng chọn ngày bắt đầu -->
+    <Button
+        android:id="@+id/setDateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Start Date"
+        android:layout_below="@id/relationshipName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFFFFF"/>
+
+</RelativeLayout>
